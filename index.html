@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b4270842c32eec30ac48869286eb121d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b4270842c32eec30ac48869286eb121d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b4270842c32eec30ac48869286eb121d = L.map(
+                "map_b4270842c32eec30ac48869286eb121d",
+                {
+                    center: [-29.713735225021466, -53.71281461789054],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf063a19b0c6035193b12d4a6104ab07 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b4270842c32eec30ac48869286eb121d);
+        
+    
+            var marker_cluster_591d644573c358fcb9472a6d58ca4c4a = L.markerClusterGroup(
+                {}
+            );
+            map_b4270842c32eec30ac48869286eb121d.addLayer(marker_cluster_591d644573c358fcb9472a6d58ca4c4a);
+        
+    
+            var marker_e09d7110de5a376961ab1080ce2317ed = L.marker(
+                [-29.713735225021466, -53.71281461789054],
+                {}
+            ).addTo(marker_cluster_591d644573c358fcb9472a6d58ca4c4a);
+        
+    
+        var custom_icon_514dc275bd1067c87e7ccb084ca12b43 = L.icon({"iconAnchor": [37.5, 72], "iconSize": [75, 75], "iconUrl": "https://raw.githubusercontent.com/LeonardoFdSantos/energens-map/main/Localizacao_Gabrieli.png", "popupAnchor": [0, -70]});
+        marker_2c79f98030e6aa136bbdeb82e39660da.setIcon(custom_icon_514dc275bd1067c87e7ccb084ca12b43);
+        
+    
+        var popup_2d68d82856649e70e9fa64120de25699 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90a129fd0f2e3f7e714ad4624161a529 = $(`<div id="html_90a129fd0f2e3f7e714ad4624161a529" style="width: 100.0%; height: 100.0%;">Prédio 26D - CCS - Terapia Ocupacional - UFSM</div>`)[0];
+                popup_2d68d82856649e70e9fa64120de25699.setContent(html_90a129fd0f2e3f7e714ad4624161a529);
+            
+        
+
+        marker_e09d7110de5a376961ab1080ce2317ed.bindPopup(popup_2d68d82856649e70e9fa64120de25699)
+        ;
+
+        
+    
+    
+            marker_e09d7110de5a376961ab1080ce2317ed.bindTooltip(
+                `<div>
+                     Prédio 26D - CCS - Terapia Ocupacional - UFSM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_055c23f690ae77bfaa3bfec1662a7188 = L.marker(
+                [-29.6910525, -53.8644269],
+                {}
+            ).addTo(marker_cluster_591d644573c358fcb9472a6d58ca4c4a);
+        
+    
+        var popup_41e6bd9561bfac2ebf4415229a381d7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6ed4efe59edc26eee574a6f362b112d8 = $(`<div id="html_6ed4efe59edc26eee574a6f362b112d8" style="width: 100.0%; height: 100.0%;">APAE</div>`)[0];
+                popup_41e6bd9561bfac2ebf4415229a381d7b.setContent(html_6ed4efe59edc26eee574a6f362b112d8);
+            
+        
+
+        marker_055c23f690ae77bfaa3bfec1662a7188.bindPopup(popup_41e6bd9561bfac2ebf4415229a381d7b)
+        ;
+
+        
+    
+    
+            marker_055c23f690ae77bfaa3bfec1662a7188.bindTooltip(
+                `<div>
+                     APAE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00d569e93626f2abfcaac73ac7177a4e = L.marker(
+                [-29.6952547, -53.8018717],
+                {}
+            ).addTo(marker_cluster_591d644573c358fcb9472a6d58ca4c4a);
+        
+    
+        var popup_aeff90188aa30d8324668afdddcaeeed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_383e779d7b200e994de19a287fa747a5 = $(`<div id="html_383e779d7b200e994de19a287fa747a5" style="width: 100.0%; height: 100.0%;">Caps Infantil O Equilibrista</div>`)[0];
+                popup_aeff90188aa30d8324668afdddcaeeed.setContent(html_383e779d7b200e994de19a287fa747a5);
+            
+        
+
+        marker_00d569e93626f2abfcaac73ac7177a4e.bindPopup(popup_aeff90188aa30d8324668afdddcaeeed)
+        ;
+
+        
+    
+    
+            marker_00d569e93626f2abfcaac73ac7177a4e.bindTooltip(
+                `<div>
+                     Caps Infantil O Equilibrista
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c79f98030e6aa136bbdeb82e39660da = L.marker(
+                [-29.688296, -53.7961155],
+                {}
+            ).addTo(marker_cluster_591d644573c358fcb9472a6d58ca4c4a);
+        
+    
+        var popup_0433a3c589a2435ce381db80fd5014d6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8cadb219b87f09f20b1eff98e876a4ac = $(`<div id="html_8cadb219b87f09f20b1eff98e876a4ac" style="width: 100.0%; height: 100.0%;">Escola Antônio Francisco Lisbôa</div>`)[0];
+                popup_0433a3c589a2435ce381db80fd5014d6.setContent(html_8cadb219b87f09f20b1eff98e876a4ac);
+            
+        
+
+        marker_2c79f98030e6aa136bbdeb82e39660da.bindPopup(popup_0433a3c589a2435ce381db80fd5014d6)
+        ;
+
+        
+    
+    
+            marker_2c79f98030e6aa136bbdeb82e39660da.bindTooltip(
+                `<div>
+                     Escola Antônio Francisco Lisbôa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
