@@ -6,9 +6,9 @@ maps = pd.read_excel('localizacoes.xlsx')
 maps
 
 mapa = folium.Map(
-    location=[-29.713735225021466, -53.71281461789054],
+    location=[-29.690118694508637, -53.80483576062766],
     tiles="OpenStreetMap",
-    zoom_start=12
+    zoom_start=13
 )
 
 iconeGabrieli = folium.features.CustomIcon('https://raw.githubusercontent.com/LeonardoFdSantos/map-gabrieli-tcc/main/Localizacao_Gabrieli.png',icon_size=(75,75), icon_anchor=(37.5, 72), popup_anchor=(0,-70))
